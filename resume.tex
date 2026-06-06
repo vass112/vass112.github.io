@@ -1,0 +1,154 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[letterpaper,margin=0.6in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{parskip}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+
+\pagenumbering{gobble}
+
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
+
+\titleformat{\section}
+{\bfseries\raggedright\large\MakeUppercase}
+{}
+{0em}
+{}[\vspace{-3pt}\rule{\textwidth}{0.5pt}\vspace{2pt}]
+
+\titlespacing{\section}{0pt}{12pt}{0pt}
+
+\setlist[itemize]{
+    leftmargin=1.1em,
+    topsep=1pt,
+    itemsep=0.5pt,
+    parsep=0pt,
+    label=\textbullet
+}
+
+\newcommand{\role}[2]{\textbf{#1} \hfill \textit{#2}}
+\newcommand{\org}[2]{\textit{#1} \hfill #2}
+\newcommand{\skillgroup}[2]{\textbf{#1:} #2}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=black,
+    citecolor=black
+}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Arjun M}} \\[3pt]
+    {\small Electronics \& Communication Engineer} \\[2pt]
+    {\small \faMapMarker* \hspace{0.3em} Thiruvananthapuram, Kerala \hspace{1.2em}
+     \faPhone* \hspace{0.3em} +91 73564 64502 \hspace{1.2em}
+     \faEnvelope \hspace{0.3em} \href{mailto:arjunmundakottu@gmail.com}{arjunmundakottu@gmail.com}} \\[2pt]
+    {\small \faLinkedin \hspace{0.3em} \href{https://linkedin.com/in/arjunm11}{linkedin.com/in/arjunm11} \hspace{1.2em}
+     \faGithub \hspace{0.3em} \href{https://github.com/vass112}{github.com/vass112}}
+\end{center}
+
+\vspace{2pt}
+
+\section*{Professional Summary}
+
+Electronics \& Communication Engineering graduate experienced in embedded systems, 5G infrastructure, wireless communications, drone development, and signal processing. Worked with live 5G NR equipment at IIST and Qualcomm-certified in 5G technologies. Co-founded a STEM education venture delivering 20+ technical workshops to 1000+ students. Built custom flight controllers, wireless control systems, and radar platforms across the full hardware--software stack.
+
+\section*{Experience}
+
+\role{Co-Founder}{2024 -- Present} \\
+\org{Nuke Labs}{}
+\begin{itemize}
+    \item Co-founded a technology and STEM education venture focused on drones, embedded systems, and hands-on engineering programs.
+    \item Led 20+ technical workshops and training sessions on UAV systems, embedded systems, and programming for 1000+ students.
+    \item Developed curriculum, managed project execution, partnerships, and technical mentorship activities.
+\end{itemize}
+
+\role{Project Intern -- 5G Testbed Lab}{Dec 2025} \\
+\org{Indian Institute of Space Science and Technology (IIST)}{}
+\begin{itemize}
+    \item Worked with live 5G NR infrastructure including gNB, AMF, SMF, UPF, and MEC; deployed sensor nodes over a private 5G network and evaluated OTA performance.
+    \item Studied antenna deployment, wireless link behaviour, signal integrity, and EMI; developed real-time monitoring pipelines using MEC infrastructure.
+\end{itemize}
+
+\role{Team Lead -- Global Evaluation Qualifier}{2024} \\
+\org{NASA Space Apps Challenge}{}
+\begin{itemize}
+    \item Built a Python-based DSP pipeline for seismic signal extraction, filtering, and event classification; led the team to the Global Evaluation Round from 57,000+ participants.
+\end{itemize}
+
+\role{Chairperson, Student Branch Chapter}{2025 -- 2026} \\
+\org{IEEE Signal Processing Society, Sree Buddha College of Engineering}{}
+\begin{itemize}
+    \item Organized embedded systems sessions, technical seminars, and project competitions.
+\end{itemize}
+
+\section*{Capstone Projects}
+
+\role{Radar-Based Human Detection Rover}{2025 -- 2026}
+\begin{itemize}
+    \item Designed a search-and-rescue rover integrating an FMCW radar module with CFAR detection and Doppler processing for human presence detection through debris and low-visibility conditions.
+    \item Developed an STM32-based embedded control system with real-time motor control, ultrasonic obstacle avoidance, and multi-threaded task scheduling.
+\end{itemize}
+
+\role{ESP32 Flight Controller}{2026}
+\begin{itemize}
+    \item Built a custom flight controller around the ESP32 with MPU6050 IMU, complementary-filter sensor fusion, and cascaded PID attitude stabilization.
+    \item Implemented PWM ESC control for four brushless motors with failsafe logic for signal loss and low-battery conditions.
+\end{itemize}
+
+\role{DIY Radio Transmitter (ESP-NOW)}{2026}
+\begin{itemize}
+    \item Designed a custom RC transmitter using ESP32 with dual-joystick input, OLED telemetry, and a 3D-printed enclosure.
+    \item Achieved sub-10ms control loop latency using ESP-NOW protocol with custom packet structure, CRC checking, and channel hopping.
+\end{itemize}
+
+\role{Planetary Seismic Detection Pipeline}{2024}
+\begin{itemize}
+    \item Developed a Python DSP pipeline using STA/LTA triggering, bandpass filtering, and spectrogram analysis for seismic event detection and classification. \href{https://github.com/vass112/seismic-detection-ml}{GitHub}
+\end{itemize}
+
+\section*{Education}
+
+\role{B.Tech Electronics \& Communication Engineering}{2022 -- 2026} \\
+\org{Sree Buddha College of Engineering, Kerala}{CGPA: 7.85/10}
+\begin{itemize}
+    \item Coursework: Digital Signal Processing, Wireless Communication, Antenna Theory, Embedded Systems, Radar Signal Processing
+\end{itemize}
+
+\role{ISC (Physics, Chemistry, Mathematics)}{2022} \\
+\org{St. Joseph's Convent English Medium School}{76.5\%}
+
+\section*{Technical Skills}
+
+\skillgroup{Wireless}{5G NR (gNB, AMF, SMF, UPF, MEC), Antenna Fundamentals, MIMO, Beamforming, OTA Testing} \\
+
+\skillgroup{Programming}{Python, C, C++, Embedded C, MATLAB, AI-Assisted Development (Claude, opencode)} \\
+
+\skillgroup{Embedded \& Signal Processing}{ESP32, STM32, Arduino, UART, SPI, I2C, PWM, ESP-NOW, PID Control, Flight Control; FFT, CFAR, Doppler Processing, Digital Filtering, Sensor Fusion} \\
+
+\skillgroup{Tools \& Platforms}{Linux, KiCad, LTspice, Oscilloscope, Spectrum Analyzer, Git, VS Code, Jupyter} \\
+
+\skillgroup{Networking}{Core Network Architecture, TCP/IP, MQTT, Network Slicing, Edge Computing / MEC}
+
+\section*{Certifications}
+
+\role{Qualcomm Introductory 5G Certification}{Aug 2025}
+
+\section*{Leadership \& Achievements}
+
+\begin{itemize}
+    \item Chairperson, IEEE SPS Student Branch Chapter (2025--2026); led workshops and events for 1000+ students
+    \item NASA Space Apps Challenge 2024 Global Evaluation Qualifier
+\end{itemize}
+
+\vspace{6pt}
+\begin{center}
+\small English (Professional) \quad $|$ \quad Malayalam (Native) \quad $|$ \quad Hindi (Conversational)
+\end{center}
+
+\end{document}
