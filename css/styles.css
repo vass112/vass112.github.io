@@ -362,16 +362,73 @@ a {
 }
 
 @media (max-width: 768px) {
+  h1 {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+  }
   .header {
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
+    padding: 1rem;
+  }
+  .header-right {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .hero {
+    padding: 3rem 1rem;
+  }
+  .section-block {
+    padding: 3rem 1rem;
+  }
+  .hero-meta {
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+  }
+  
+  /* Transform Data Tables into Mobile Cards */
+  .data-table thead {
+    display: none;
+  }
+  .data-table tr {
+    display: block;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--border-color);
   }
   .data-table th, .data-table td {
     display: block;
     width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(17,17,17,0.1);
+  }
+  .data-table td:last-child {
+    border-bottom: none;
   }
   .data-table td.year {
-    border-bottom: none;
+    font-size: 0.8rem;
+    background: rgba(17,17,17,0.05);
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  /* Ensure grids become single columns */
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  .matrix-grid {
+    grid-template-columns: 1fr;
+    border-top: none;
+    border-left: none;
+  }
+  .matrix-cell {
+    border-left: 1px solid var(--border-color);
+    border-top: 1px solid var(--border-color);
+  }
+  
+  /* Footer stacking */
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
   }
 }
