@@ -1,298 +1,261 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arjun M | Systems Architect & Engineer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="ambient-glow-1"></div>
+    <div class="ambient-glow-2"></div>
 
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Arjun M // Obsidian Portfolio</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<style>body {
-    background-color: #121411;
-    background-image: radial-gradient(circle at 2px 2px, rgba(42, 42, 40, 0.5) 1px, transparent 0);
-    background-size: 24px 24px;
-    color: #e3e3de
-    }
-.noise-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    opacity: 0.03;
-    z-index: 9999;
-    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuDuMsyrXybavULpTIdQIaLz_niXUDYKZIXVMiX0_7uvR9bCQtRTFzRgdaMNuwTKxupg14A5CjmwJRYTF0Ck_M3eb3emDSx4_UbjeG3grVg38VzJHZjEC2XHuY1aRXdS0baYZqDZrMF0PgdaJS8hTffomonyJlDvp9hU9z_xspreOJwZldpgLq3_l-UDmRbBLs9HdCZcDe_zGqk68wahldigIbbbSNY16BuBpW7ucOQaLyzcEbBZ6CMGdl4DwsmU0Xe_i1CZEoM8mOQ)
-    }
-.glow-gold {
-    box-shadow: 0 0 20px rgba(212, 168, 83, 0.1)
-    }
-.glow-gold-active:hover {
-    box-shadow: 0 0 30px rgba(212, 168, 83, 0.2);
-    border-color: #f2c36b
-    }
-.solder-point {
-    width: 4px;
-    height: 4px;
-    background-color: #4e4637;
-    position: absolute
-    }
-.oscilloscope-path {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: dash 5s linear infinite
-    }
-@keyframes dash {
-    to {
-        stroke-dashoffset: 0;
-        }
-    }
-.terminal-cursor {
-    display: inline-block;
-    width: 8px;
-    height: 14px;
-    background-color: #f2c36b;
-    animation: blink 1s step-end infinite
-    }
-@keyframes blink {
-    50% {
-        opacity: 0;
-        }
-    }</style>
-<style>
-    body {
-      min-height: max(884px, 100dvh);
-    }
-  </style>
-  </head>
-<body class="font-body-md overflow-x-hidden selection:bg-primary/30">
-<div class="noise-overlay"></div>
-<!-- Top Navigation (Shell Component) -->
-<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant flex justify-between items-center px-6 py-4">
-<div class="font-label-mono text-body-lg font-bold tracking-tighter text-primary">
-            ARJUN_M // SYS_ENG
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fa-solid fa-microchip"></i> <span>ARJUN</span>_M
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
         </div>
-<div class="hidden md:flex gap-6">
-<a class="text-primary border-b-2 border-primary pb-1 relative after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:w-1 after:h-1 after:bg-primary after:rounded-full after:animate-ping font-label-mono text-label-mono" href="#">Research</a>
-<a class="text-on-surface-variant font-label-mono text-label-mono hover:text-primary transition-colors" href="#">Hardware</a>
-<a class="text-on-surface-variant font-label-mono text-label-mono hover:text-primary transition-colors" href="#">Signals</a>
-</div>
-<button class="bg-primary px-4 py-1 text-on-primary-fixed font-label-mono text-[10px] font-bold rounded-sm hover:opacity-80 active:scale-95 transition-all">
-            DOWNLOAD_SPEC
-        </button>
-</nav>
-<main class="pt-24 pb-32 px-6 max-w-2xl mx-auto space-y-12">
-<!-- Hero Module -->
-<section class="relative bg-surface-container-low border border-outline-variant p-module-padding overflow-hidden">
-<div class="absolute top-0 right-0 p-2 font-label-mono text-[10px] text-outline opacity-50">SN-HERO_V1.2</div>
-<div class="absolute -left-1 -top-1 solder-point"></div>
-<div class="absolute -right-1 -top-1 solder-point"></div>
-<div class="space-y-4 relative z-10">
-<div class="flex items-center gap-3">
-<div class="w-2 h-2 rounded-full bg-primary animate-pulse shadow-[0_0_8px_#f2c36b]"></div>
-<span class="font-label-mono text-label-mono text-primary uppercase tracking-widest">SYSTEM_ACTIVE</span>
-</div>
-<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface leading-tight">
-                    Arjun M | <span class="text-primary">Systems Architect</span> &amp; Co-Founder
-                </h1>
-<p class="font-body-md text-on-surface-variant max-w-prose">
-                    ECE Grad specializing in Robotics, IoT, UAV Systems, and 5G NR. Building the intersection of hardware precision and intelligent software.
-                </p>
-<div class="pt-4 grid grid-cols-1 gap-2 font-label-mono text-label-mono">
-<a class="flex items-center gap-2 hover:text-primary transition-colors" href="mailto:arjunmundakottu@gmail.com">
-<span class="material-symbols-outlined text-[16px]" data-icon="mail">mail</span>
-                        arjunmundakottu@gmail.com
-                    </a>
-<a class="flex items-center gap-2 hover:text-primary transition-colors" href="https://github.com/vass112">
-<span class="material-symbols-outlined text-[16px]" data-icon="terminal">terminal</span>
-                        github/vass112
-                    </a>
-<a class="flex items-center gap-2 hover:text-primary transition-colors" href="https://linkedin.com/in/arjunm11">
-<span class="material-symbols-outlined text-[16px]" data-icon="lan">lan</span>
-                        linkedin/arjunm11
-                    </a>
-</div>
-</div>
-<!-- Oscilloscope Visual -->
-<div class="absolute bottom-0 right-0 w-48 h-24 opacity-20 pointer-events-none">
-<svg class="w-full h-full" viewbox="0 0 200 100">
-<path class="oscilloscope-path" d="M0,50 Q25,0 50,50 T100,50 T150,50 T200,50" fill="none" stroke="#d4a853" stroke-width="1"></path>
-</svg>
-</div>
-</section>
-<!-- Experience Section -->
-<section class="space-y-6">
-<div class="flex items-center gap-4">
-<h2 class="font-label-mono text-label-mono text-primary uppercase tracking-widest">EXPERIENCE_LOG</h2>
-<div class="h-px flex-1 bg-outline-variant"></div>
-</div>
-<div class="space-y-4">
-<!-- Module A -->
-<div class="group relative bg-surface-container-low border border-outline-variant p-6 hover:bg-surface-container-high transition-all">
-<div class="flex justify-between items-start mb-2">
-<span class="font-label-mono text-[10px] text-secondary">01 // CO_FOUNDER</span>
-<span class="font-label-mono text-[10px] text-outline">NOV 24 - PRES</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Nuke Labs</h3>
-<p class="font-body-md text-on-surface-variant text-sm mb-4">Technology and STEM education venture. Trained 1000+ students in robotics and UAV fundamentals. Led R&amp;D on IoT and drones.</p>
-<div class="flex gap-2">
-<span class="px-2 py-0.5 border border-outline-variant font-label-mono text-[9px] text-outline">UAV_SYSTEMS</span>
-<span class="px-2 py-0.5 border border-outline-variant font-label-mono text-[9px] text-outline">ED_TECH</span>
-</div>
-</div>
-<!-- Module B -->
-<div class="group relative bg-surface-container-low border border-outline-variant p-6 hover:bg-surface-container-high transition-all">
-<div class="flex justify-between items-start mb-2">
-<span class="font-label-mono text-[10px] text-secondary">02 // INTERN_RSCH</span>
-<span class="font-label-mono text-[10px] text-outline">NOV 25 - JAN 26</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-surface mb-1">5G Use Case Lab, IIST</h3>
-<p class="font-body-md text-on-surface-variant text-sm mb-4">Worked with live 5G NR infrastructure and Edge Computing (MEC) to architect low-latency signal pathways.</p>
-<div class="flex gap-2">
-<span class="px-2 py-0.5 border border-outline-variant font-label-mono text-[9px] text-outline">5G_NR</span>
-<span class="px-2 py-0.5 border border-outline-variant font-label-mono text-[9px] text-outline">MEC</span>
-</div>
-</div>
-</div>
-</section>
-<!-- Selected Projects -->
-<section class="space-y-6">
-<div class="flex items-center gap-4">
-<h2 class="font-label-mono text-label-mono text-primary uppercase tracking-widest">DEPLOYED_MODULES</h2>
-<div class="h-px flex-1 bg-outline-variant"></div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-<!-- Project 1 -->
-<div class="bg-surface-container-lowest border border-outline-variant p-6 flex flex-col justify-between glow-gold-active transition-all relative">
-<div class="absolute top-2 right-2"><span class="material-symbols-outlined text-primary text-sm" data-icon="radar">radar</span></div>
-<div>
-<h4 class="font-label-mono text-primary text-xs mb-2">P-01 // RADAR_ML</h4>
-<h3 class="font-headline-md text-headline-md mb-2">LD2450 TinyML</h3>
-<p class="font-body-md text-on-surface-variant text-sm">Edge ML pipeline for motion classification using ESP32 and Keras.</p>
-</div>
-</div>
-<!-- Project 2 -->
-<div class="bg-surface-container-lowest border border-outline-variant p-6 flex flex-col justify-between glow-gold-active transition-all relative">
-<div class="absolute top-2 right-2"><span class="material-symbols-outlined text-secondary text-sm" data-icon="public">public</span></div>
-<div>
-<h4 class="font-label-mono text-primary text-xs mb-2">P-02 // NASA_RSCH</h4>
-<h3 class="font-headline-md text-headline-md mb-2">Seismic Det.</h3>
-<p class="font-body-md text-on-surface-variant text-sm">Global qualifier project using Python DSP and ML for planetary seismic events.</p>
-</div>
-</div>
-<!-- Project 3 -->
-<div class="bg-surface-container-lowest border border-outline-variant p-6 flex flex-col justify-between glow-gold-active transition-all relative">
-<div class="absolute top-2 right-2"><span class="material-symbols-outlined text-primary text-sm" data-icon="article">article</span></div>
-<div>
-<h4 class="font-label-mono text-primary text-xs mb-2">P-03 // FULL_STACK</h4>
-<h3 class="font-headline-md text-headline-md mb-2">PaperWriter</h3>
-<p class="font-body-md text-on-surface-variant text-sm">Academic platform with Django, Gemini AI, and LaTeX integration.</p>
-</div>
-</div>
-<!-- Project 4 -->
-<div class="bg-surface-container-lowest border border-outline-variant p-6 flex flex-col justify-between glow-gold-active transition-all relative">
-<div class="absolute top-2 right-2"><span class="material-symbols-outlined text-secondary text-sm" data-icon="smart_toy">smart_toy</span></div>
-<div>
-<h4 class="font-label-mono text-primary text-xs mb-2">P-04 // ROBOTICS</h4>
-<h3 class="font-headline-md text-headline-md mb-2">Radar Rover</h3>
-<p class="font-body-md text-on-surface-variant text-sm">FMCW radar-based search and rescue human detection rover.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Technical Expertise Table -->
-<section class="space-y-6">
-<div class="flex items-center gap-4">
-<h2 class="font-label-mono text-label-mono text-primary uppercase tracking-widest">SPEC_SHEET</h2>
-<div class="h-px flex-1 bg-outline-variant"></div>
-</div>
-<div class="border border-outline-variant bg-surface-container-low overflow-hidden">
-<table class="w-full border-collapse font-data-table text-data-table">
-<tbody>
-<tr class="border-b border-outline-variant">
-<td class="p-4 border-r border-outline-variant bg-surface-container-high text-primary w-1/3">Embedded Systems</td>
-<td class="p-4 text-on-surface-variant">ESP32, STM32, FreeRTOS, Arduino</td>
-</tr>
-<tr class="border-b border-outline-variant">
-<td class="p-4 border-r border-outline-variant bg-surface-container-high text-primary">Wireless Protocols</td>
-<td class="p-4 text-on-surface-variant">5G NR Core, LoRa, ESP-NOW, MQTT</td>
-</tr>
-<tr class="border-b border-outline-variant">
-<td class="p-4 border-r border-outline-variant bg-surface-container-high text-primary">Signal &amp; ML</td>
-<td class="p-4 text-on-surface-variant">DSP, TinyML, FFT, Keras, NumPy</td>
-</tr>
-<tr>
-<td class="p-4 border-r border-outline-variant bg-surface-container-high text-primary">Core Languages</td>
-<td class="p-4 text-on-surface-variant">Python, C, C++, JavaScript (Node)</td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-</main>
-<!-- Terminal Footer -->
-<footer class="fixed bottom-0 w-full z-40 bg-surface-container-lowest border-t border-outline-variant">
-<div class="flex flex-col md:flex-row justify-between items-center px-6 py-3 font-label-mono text-[10px] uppercase tracking-widest text-on-tertiary-fixed-variant">
-<div class="flex items-center gap-4">
-<div class="flex items-center gap-1">
-<span class="w-2 h-2 rounded-full bg-primary shadow-[0_0_5px_#f2c36b]"></span>
-<span>ONLINE</span>
-</div>
-<div class="flex items-center gap-1">
-<span class="material-symbols-outlined text-[10px]" data-icon="signal_cellular_alt">signal_cellular_alt</span>
-<span>SIGNAL_OK</span>
-</div>
-<div class="hidden md:block">
-                    LATENCY: <span id="latency">24</span>ms
-                </div>
-</div>
-<div class="flex items-center gap-4 mt-2 md:mt-0">
-<span id="timestamp">SYS_CLOCK: 12:45:01</span>
-<span class="terminal-cursor"></span>
-</div>
-</div>
-</footer>
-<!-- Side Navigation (Mobile/Compact Shell) -->
-<aside class="hidden md:flex h-screen w-20 fixed left-0 top-0 flex-col items-center py-20 z-40 border-r border-outline-variant bg-surface-container-low space-y-8">
-<div class="font-label-mono text-primary text-xs rotate-90 whitespace-nowrap mb-8 opacity-50">AM_V01.2 // 5G_PROTOCOL</div>
-<button class="bg-primary-container text-on-primary-container rounded-lg p-3 shadow-[0_0_15px_rgba(212,168,83,0.3)] scale-110">
-<span class="material-symbols-outlined" data-icon="memory">memory</span>
-</button>
-<button class="text-on-surface-variant p-3 hover:text-primary transition-all">
-<span class="material-symbols-outlined" data-icon="terminal">terminal</span>
-</button>
-<button class="text-on-surface-variant p-3 hover:text-primary transition-all">
-<span class="material-symbols-outlined" data-icon="settings_input_antenna">settings_input_antenna</span>
-</button>
-<button class="text-on-surface-variant p-3 hover:text-primary transition-all">
-<span class="material-symbols-outlined" data-icon="folder_open">folder_open</span>
-</button>
-</aside>
-<script>
-        // Update Terminal Clock
-        function updateClock() {
-            const now = new Date();
-            const timeStr = now.toTimeString().split(' ')[0];
-            document.getElementById('timestamp').innerText = `SYS_CLOCK: ${timeStr}`;
-            
-            // Randomize Latency for "live" feel
-            const latency = Math.floor(Math.random() * (45 - 18) + 18);
-            document.getElementById('latency').innerText = latency;
-        }
-        setInterval(updateClock, 1000);
-        updateClock();
+    </nav>
 
-        // Interaction scale effect for modules
-        document.querySelectorAll('.group, .glow-gold-active').forEach(el => {
-            el.addEventListener('mousedown', () => {
-                el.style.transform = 'scale(0.98)';
-                el.style.opacity = '0.8';
-            });
-            el.addEventListener('mouseup', () => {
-                el.style.transform = 'scale(1)';
-                el.style.opacity = '1';
-            });
-        });
-    </script>
-</body></html>
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content reveal">
+                <div class="hero-badge">SYSTEMS_ACTIVE_V2.0</div>
+                <h1>Architecting <span class="highlight">Hardware & AI</span> Systems</h1>
+                <p>ECE Grad, Co-Founder of Nuke Labs. Specializing in Robotics, Edge AI, UAV Systems, and 5G NR. Building the intersection of hardware precision and intelligent software.</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fa-solid fa-satellite-dish"></i> View Deployments
+                    </a>
+                    <a href="https://github.com/vass112" target="_blank" class="btn btn-outline">
+                        <i class="fa-brands fa-github"></i> GitHub Profile
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2 class="reveal">Experience Log</h2>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Nov 2024 - Present</span>
+                        <h3 class="timeline-title">Co-Founder</h3>
+                        <div class="timeline-org">Nuke Labs</div>
+                        <p>Technology and STEM education venture focused on drones, embedded systems, and hands-on engineering programs. Led R&D on IoT, UAVs, and trained 1000+ students across various institutions.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Nov 2025 - Jan 2026</span>
+                        <h3 class="timeline-title">Project Intern (5G & Edge Computing)</h3>
+                        <div class="timeline-org">5G Use Case Lab, Indian Institute of Space Science and Technology (IIST)</div>
+                        <p>Worked with live 5G NR infrastructure (gNB, AMF, SMF, UPF, MEC). Deployed wireless sensor nodes over a private 5G network and evaluated OTA communication performance.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Feb 2025 - Present</span>
+                        <h3 class="timeline-title">Chairperson</h3>
+                        <div class="timeline-org">IEEE SPS Student Branch Chapter - SBCE</div>
+                        <p>Led the IEEE Signal Processing Society Student Branch Chapter. Conducted embedded systems sessions, technical seminars, and project competitions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="reveal">Key Deployments</h2>
+            
+            <div class="projects-grid">
+                <!-- Project: Radar Rover -->
+                <div class="project-card reveal">
+                    <img src="projects/rover.jpeg" alt="Radar Rover" class="project-image">
+                    <h3 class="project-title">Radar-Based Human Detection Rover</h3>
+                    <p class="project-desc">Search-and-rescue rover that detects human presence using FMCW radar sensing. Integrated radar subsystem with embedded motor control, obstacle avoidance, and real-time TinyML motion classification.</p>
+                    <div class="project-tags">
+                        <span class="tag">Radar DSP</span>
+                        <span class="tag">STM32</span>
+                        <span class="tag">Sensor Fusion</span>
+                    </div>
+                </div>
+
+                <!-- Project: Seismic Detection -->
+                <div class="project-card reveal">
+                    <img src="projects/seismic.png" alt="Seismic Detection ML" class="project-image">
+                    <h3 class="project-title">Planetary Seismic Detection Pipeline</h3>
+                    <p class="project-desc">NASA Space Apps 2024 Global Evaluation Qualifier (out of 57,000+ participants). Developed a Python-based DSP & ML pipeline for moonquake and marsquake signal extraction, filtering (STA/LTA), and event classification.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">DSP</span>
+                        <span class="tag">Random Forest</span>
+                    </div>
+                </div>
+
+                <!-- Project: ESP32 Flight Controller -->
+                <div class="project-card reveal">
+                    <img src="projects/flight controller.jpeg" alt="ESP32 Flight Controller" class="project-image">
+                    <h3 class="project-title">Custom ESP32 Flight Controller</h3>
+                    <p class="project-desc">Custom ESP32-based drone flight controller. Implements complementary-filter sensor fusion using MPU6050 IMU, robust PID stabilization, and PWM-based ESC motor control.</p>
+                    <div class="project-tags">
+                        <span class="tag">ESP32</span>
+                        <span class="tag">PID Control</span>
+                        <span class="tag">IMU</span>
+                    </div>
+                </div>
+
+                <!-- Project: DIY Transmitter -->
+                <div class="project-card reveal">
+                    <img src="projects/transmitter.jpeg" alt="DIY Radio Transmitter" class="project-image">
+                    <h3 class="project-title">Low-Latency RC Transmitter</h3>
+                    <p class="project-desc">Custom DIY ESP32-based radio transmitter achieving low-latency wireless communication for real-time RC drone and rover control using the ESP-NOW protocol.</p>
+                    <div class="project-tags">
+                        <span class="tag">ESP-NOW</span>
+                        <span class="tag">ESP32</span>
+                        <span class="tag">RC Protocol</span>
+                    </div>
+                </div>
+
+                <!-- Project: LD2450 TinyML -->
+                <div class="project-card reveal">
+                    <div class="project-icon"><i class="fa-solid fa-wave-square"></i></div>
+                    <h3 class="project-title">LD2450 TinyML Motion Classifier</h3>
+                    <p class="project-desc">Edge ML pipeline for LD2450 radar sensor. Complete workflow from data capture, Keras model training, ESP32 deployment, and real-time ESP-NOW telemetry dashboard.</p>
+                    <div class="project-tags">
+                        <span class="tag">TinyML</span>
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">C++</span>
+                    </div>
+                </div>
+
+                <!-- Project: PaperWriter -->
+                <div class="project-card reveal">
+                    <div class="project-icon"><i class="fa-solid fa-file-pen"></i></div>
+                    <h3 class="project-title">PaperWriter (AcademicOS)</h3>
+                    <p class="project-desc">Full-stack academic paper authoring platform for IEEE-style papers. Features TipTap WYSIWYG editor, Django backend, Google Gemini API integration, and automated LaTeX/PDF export pipeline.</p>
+                    <div class="project-tags">
+                        <span class="tag">Django</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">LaTeX</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More Projects / GitHub Repos -->
+            <div style="margin-top: 4rem;">
+                <h3 class="reveal" style="text-align: center; margin-bottom: 2rem; color: var(--text-secondary);">Other Notable Open Source Projects</h3>
+                <div class="projects-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                    <div class="project-card reveal" style="padding: 1.5rem;">
+                        <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Nereus Coastal Mesh</h4>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">LoRa-based mesh communication system for coastal areas using ESP32 and SX1278.</p>
+                        <span class="tag">LoRa</span> <span class="tag">C++</span>
+                    </div>
+                    <div class="project-card reveal" style="padding: 1.5rem;">
+                        <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem;">SCARA Pen Plotter</h4>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">SCARA robot arm with GRBL firmware, Flask server, and browser UI for G-code upload.</p>
+                        <span class="tag">C</span> <span class="tag">Python</span>
+                    </div>
+                    <div class="project-card reveal" style="padding: 1.5rem;">
+                        <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem;">ai-resume-builder-v2</h4>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">Next.js AI-powered resume builder leveraging Google Gemini with ATS-friendly templates.</p>
+                        <span class="tag">Next.js</span> <span class="tag">AI</span>
+                    </div>
+                    <div class="project-card reveal" style="padding: 1.5rem;">
+                        <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Sophia CivOps</h4>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">Offline Wi-Fi/BLE signal reconnaissance platform designed for Android Termux.</p>
+                        <span class="tag">Python</span> <span class="tag">Security</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2 class="reveal">Technical Core</h2>
+            <div class="skills-wrapper reveal">
+                <!-- Embedded Systems -->
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-microchip"></i> Embedded & Hardware</h3>
+                    <ul class="skill-list">
+                        <li><span>ESP32 / STM32 / Arduino</span> <span>Expert</span></li>
+                        <li><span>UART, SPI, I2C, PWM</span> <span>Expert</span></li>
+                        <li><span>PID & Flight Control</span> <span>Expert</span></li>
+                        <li><span>KiCad PCB Design</span> <span>Proficient</span></li>
+                        <li><span>Sensor Fusion & IMU</span> <span>Proficient</span></li>
+                    </ul>
+                </div>
+                
+                <!-- Wireless & 5G -->
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-wifi"></i> Wireless & Communications</h3>
+                    <ul class="skill-list">
+                        <li><span>5G NR Core (gNB, AMF, UPF)</span> <span>Expert</span></li>
+                        <li><span>ESP-NOW Protocol</span> <span>Expert</span></li>
+                        <li><span>LoRa Mesh (SX1278)</span> <span>Proficient</span></li>
+                        <li><span>Edge Computing / MEC</span> <span>Proficient</span></li>
+                        <li><span>OTA Testing & Telemetry</span> <span>Proficient</span></li>
+                    </ul>
+                </div>
+
+                <!-- Signal & ML -->
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-chart-line"></i> Signal Processing & ML</h3>
+                    <ul class="skill-list">
+                        <li><span>DSP (FFT, CFAR, Doppler)</span> <span>Expert</span></li>
+                        <li><span>Digital Filtering</span> <span>Expert</span></li>
+                        <li><span>TinyML / Edge AI</span> <span>Proficient</span></li>
+                        <li><span>TensorFlow / Keras</span> <span>Proficient</span></li>
+                        <li><span>STA/LTA & Feature Extraction</span> <span>Proficient</span></li>
+                    </ul>
+                </div>
+
+                <!-- Software & Web -->
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-code"></i> Software Engineering</h3>
+                    <ul class="skill-list">
+                        <li><span>Python / C</span> <span>Expert</span></li>
+                        <li><span>C++</span> <span>Proficient</span></li>
+                        <li><span>Django & DRF</span> <span>Proficient</span></li>
+                        <li><span>HTML/CSS/JS</span> <span>Proficient</span></li>
+                        <li><span>AI Agents & Workflows</span> <span>Expert</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content reveal">
+            <h3 class="footer-title">Let's Build the Future</h3>
+            <p class="footer-desc">Open for collaborations in Robotics, 5G Core, and Embedded AI systems.</p>
+            <div class="social-links">
+                <a href="https://github.com/vass112" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/arjunm11" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:arjunmundakottu@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://instagram.com/arjun.nukelabs" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 Arjun M. All systems nominal.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
