@@ -12,21 +12,9 @@
 </head>
 <body>
 
-    <div class="bg-dots"></div>
-    <div class="bg-signal">
-        <svg viewBox="0 0 600 200" preserveAspectRatio="none">
-            <path class="wave" d="M0,120 C40,40 80,40 120,120 C160,200 200,200 240,120 C280,40 320,40 360,120 C400,200 440,200 480,120 C520,40 560,40 600,120" />
-            <path class="wave2" d="M0,100 C60,30 120,30 180,100 C240,170 300,170 360,100 C420,30 480,30 540,100 C600,170 660,170 720,100" />
-            <path class="wave" d="M0,160 C50,80 100,80 150,160 C200,240 250,240 300,160 C350,80 400,80 450,160 C500,240 550,240 600,160" style="opacity:0.4" />
-        </svg>
-    </div>
-    <div class="bg-ambient"></div>
-    <div class="bg-scan"></div>
-    <div class="bg-vignette"></div>
-
     <nav id="navbar">
         <div class="nav-inner">
-            <a href="#" class="logo">Arjun M.<span class="logo-accent">/</span></a>
+            <a href="#" class="logo">Arjun M<span class="logo-accent">.</span></a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
@@ -42,8 +30,46 @@
 
     <main>
         <section id="hero">
-            <div class="hero-text">
-                <h1 class="hero-title">Arjun M</h1>
+            <div class="hero-bg">
+                <div class="hero-waves">
+                    <svg viewBox="0 0 1200 400" preserveAspectRatio="none">
+                        <path class="wave-path" d="M0,200 C100,100 200,300 300,200 C400,100 500,300 600,200 C700,100 800,300 900,200 C1000,100 1100,300 1200,200 L1200,400 L0,400 Z" />
+                        <path class="wave-path" d="M0,250 C150,150 300,350 450,250 C600,150 750,350 900,250 C1050,150 1200,350 1200,250 L1200,400 L0,400 Z" />
+                        <path class="wave-path" d="M0,180 C80,120 160,240 240,180 C320,120 400,240 480,180 C560,120 640,240 720,180 C800,120 880,240 960,180 C1040,120 1120,240 1200,180 L1200,400 L0,400 Z" />
+                    </svg>
+                </div>
+                <div class="circuit-traces">
+                    <svg viewBox="0 0 1200 800" preserveAspectRatio="none">
+                        <path class="trace-line" d="M0,100 L200,100 L250,150 L400,150" />
+                        <path class="trace-line" d="M0,200 L150,200 L200,250 L350,250 L400,200 L600,200" />
+                        <path class="trace-line" d="M800,300 L900,300 L950,250 L1100,250" />
+                        <path class="trace-line" d="M600,400 L700,400 L750,450 L900,450 L950,400 L1200,400" />
+                        <path class="trace-line" d="M200,500 L300,500 L350,550 L500,550" />
+                        <path class="trace-line" d="M900,600 L1000,600 L1050,550 L1200,550" />
+                    </svg>
+                </div>
+                <div class="radar-sweep"></div>
+                <div class="particles">
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                </div>
+            </div>
+            <div class="hero-content container">
+                <div class="hero-badge">
+                    <span class="hero-badge-dot"></span>
+                    Qualcomm 5G Certified
+                </div>
+                <h1 class="hero-title">
+                    Arjun <span class="hero-title-accent">M</span>
+                </h1>
                 <p class="hero-subtitle">Electronics &amp; Communication Engineer — embedded systems, 5G networks, UAV technologies.</p>
                 <p class="hero-desc">
                     Building hardware and wireless systems at the intersection of telecommunications, signal processing, and autonomous flight. Hands-on with live 5G NR infrastructure, custom flight controllers, and radar platforms.
@@ -53,12 +79,23 @@
                     <a href="#contact" class="btn btn-outline">Get in Touch</a>
                 </div>
                 <div class="hero-links">
-                    <a href="https://linkedin.com/in/arjunm11" target="_blank">LinkedIn</a>
-                    <a href="https://instagram.com/arjun.nukelabs" target="_blank">arjun.nukelabs</a>
-                    <a href="https://github.com/vass112" target="_blank">GitHub</a>
-                    <a href="mailto:arjunmundakottu@gmail.com">Email</a>
+                    <a href="https://linkedin.com/in/arjunm11" target="_blank">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/vass112" target="_blank">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                        GitHub
+                    </a>
+                    <a href="mailto:arjunmundakottu@gmail.com">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        Email
+                    </a>
                     <a href="https://deeptechkerala.in" target="_blank">DeepTech Kerala</a>
-                    <span>Kochi, Kerala</span>
+                    <span class="hero-location">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Kochi, Kerala
+                    </span>
                 </div>
             </div>
         </section>
@@ -106,7 +143,7 @@
         <section id="skills" class="section section-alt">
             <div class="container">
                 <h2 class="section-title">Skills</h2>
-                <div class="skills-grid reveal-stagger">
+                <div class="skills-grid">
                     <div class="skill-card">
                         <svg class="skill-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
                         <h3>Wireless Communications</h3>
@@ -186,8 +223,20 @@
                                 <li>Led 30+ technical workshops and hands-on training sessions on UAV systems, embedded systems, and programming for 1000+ students.</li>
                                 <li>Mentored 15+ student projects spanning drones, IoT, radar systems, and embedded hardware.</li>
                                 <li>Partnered with 5+ academic institutions for curriculum delivery and technical training programs.</li>
-                                <li>Led curriculum development, technical content creation, and project execution for student training programs.</li>
-                                <li>Managed partnerships, operations, and technical mentorship activities.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-meta">
+                            <span class="timeline-date">2025 – Present</span>
+                            <span class="timeline-org">DeepTech Kerala</span>
+                        </div>
+                        <div class="timeline-body">
+                            <h3>Founder</h3>
+                            <ul>
+                                <li>Founded a community-driven initiative fostering innovation in deep tech — drones, AI, IoT, and 5G — with 300+ members across Kerala.</li>
+                                <li>Organizing technical meetups, hands-on workshops, and project collaboration events for the deep-tech community.</li>
                             </ul>
                         </div>
                     </div>
@@ -284,7 +333,7 @@
         <section id="projects" class="section section-alt">
             <div class="container">
                 <h2 class="section-title">Capstone Projects</h2>
-                <div class="projects-grid reveal-stagger">
+                <div class="projects-grid">
                     <article class="project-card">
                         <div class="project-image">
                             <img src="projects/rover.jpeg" alt="Radar-based human detection rover" loading="lazy" />
@@ -337,8 +386,8 @@
                         </div>
                     </article>
                     <article class="project-card">
-                        <div class="project-image project-placeholder" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); display: flex; align-items: center; justify-content: center; min-height: 180px;">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.3;"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        <div class="project-image project-placeholder" style="background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%); display: flex; align-items: center; justify-content: center; min-height: 200px;">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#0ea5e9" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.4;"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                         </div>
                         <div class="project-body">
                             <span class="project-tag">DIY Hardware / Web</span>
@@ -354,8 +403,8 @@
                         </div>
                     </article>
                     <article class="project-card">
-                        <div class="project-image project-placeholder" style="background: linear-gradient(135deg, #0f3443 0%, #34e89e 100%); display: flex; align-items: center; justify-content: center; min-height: 180px;">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.3;"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                        <div class="project-image project-placeholder" style="background: linear-gradient(135deg, #ccfbf1 0%, #99f6e4 100%); display: flex; align-items: center; justify-content: center; min-height: 200px;">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#14b8a6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.4;"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
                         </div>
                         <div class="project-body">
                             <span class="project-tag">Signal Processing / GUI</span>
@@ -388,8 +437,8 @@
                         </div>
                     </article>
                     <article class="project-card">
-                        <div class="project-image project-placeholder" style="background: linear-gradient(135deg, #42275a 0%, #734b6d 100%); display: flex; align-items: center; justify-content: center; min-height: 180px;">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.3;"><path d="M12 2a10 10 0 1 0 10 10h-10V2z"/><path d="M12 12 2.93 17.09"/><circle cx="12" cy="12" r="10"/></svg>
+                        <div class="project-image project-placeholder" style="background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%); display: flex; align-items: center; justify-content: center; min-height: 200px;">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.4;"><path d="M12 2a10 10 0 1 0 10 10h-10V2z"/><path d="M12 12 2.93 17.09"/><circle cx="12" cy="12" r="10"/></svg>
                         </div>
                         <div class="project-body">
                             <span class="project-tag">Edge ML</span>
@@ -405,8 +454,8 @@
                         </div>
                     </article>
                     <article class="project-card">
-                        <div class="project-image project-placeholder" style="background: linear-gradient(135deg, #0d7377 0%, #14bdac 100%); display: flex; align-items: center; justify-content: center; min-height: 180px;">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.3;"><path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        <div class="project-image project-placeholder" style="background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%); display: flex; align-items: center; justify-content: center; min-height: 200px;">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.4;"><path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
                         </div>
                         <div class="project-body">
                             <span class="project-tag">LoRa / IoT</span>
@@ -422,8 +471,8 @@
                         </div>
                     </article>
                     <article class="project-card">
-                        <div class="project-image project-placeholder" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #e94560 100%); display: flex; align-items: center; justify-content: center; min-height: 180px;">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.3;"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <div class="project-image project-placeholder" style="background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%); display: flex; align-items: center; justify-content: center; min-height: 200px;">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.4;"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
                         </div>
                         <div class="project-body">
                             <span class="project-tag">Firmware</span>
@@ -439,8 +488,8 @@
                         </div>
                     </article>
                     <article class="project-card">
-                        <div class="project-image project-placeholder" style="background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); display: flex; align-items: center; justify-content: center; min-height: 180px;">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.3;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                        <div class="project-image project-placeholder" style="background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%); display: flex; align-items: center; justify-content: center; min-height: 200px;">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.4;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
                         </div>
                         <div class="project-body">
                             <span class="project-tag">AI / Web</span>
@@ -462,7 +511,7 @@
         <section id="education" class="section">
             <div class="container">
                 <h2 class="section-title">Education &amp; Certifications</h2>
-                <div class="edu-grid reveal-stagger">
+                <div class="edu-grid">
                     <div class="edu-card">
                         <h3>B.Tech Electronics &amp; Communication Engineering</h3>
                         <p class="edu-meta">Sree Buddha College of Engineering, Kerala</p>
@@ -487,17 +536,21 @@
             <div class="container">
                 <h2 class="section-title">Contact</h2>
                 <div class="contact-content">
-                        <p class="contact-desc">
-                            Open to collaborations on embedded systems, 5G, and UAV projects. Founder of <a href="https://deeptechkerala.in" target="_blank">DeepTech Kerala</a>.
-                        </p>
+                    <p class="contact-desc">
+                        Open to collaborations on embedded systems, 5G, and UAV projects. Founder of <a href="https://deeptechkerala.in" target="_blank">DeepTech Kerala</a>.
+                    </p>
                     <div class="contact-list">
                         <a href="mailto:arjunmundakottu@gmail.com" class="contact-row">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                             arjunmundakottu@gmail.com
                         </a>
                         <a href="https://linkedin.com/in/arjunm11" target="_blank" class="contact-row">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                             linkedin.com/in/arjunm11
+                        </a>
+                        <a href="https://github.com/vass112" target="_blank" class="contact-row">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                            github.com/vass112
                         </a>
                         <a href="https://instagram.com/arjun.nukelabs" target="_blank" class="contact-row">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
@@ -513,14 +566,14 @@
                         </div>
                     </div>
                 </div>
+                <footer class="footer">
+                    <p>&copy; 2026 Arjun M</p>
+                    <p>Built with purpose</p>
+                </footer>
             </div>
-            <footer class="footer">
-                <p>&copy; 2026 Arjun M</p>
-            </footer>
         </section>
     </main>
 
     <script src="js/script.js"></script>
 </body>
 </html>
-<!-- rebuild -->
